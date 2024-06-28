@@ -1,0 +1,19 @@
+<?php
+/** @var \UPS\Liverates\Block\Adminhtml\System\Config\Button $block */
+?>
+<div class="actions actions-addon-active">
+    <button addonstatus="<?= $block->escapeHtml($block->getActiveStatus()); ?>" class="actions-addon-active action-default scalable primary ui-button ui-corner-all ui-widget" type="button" id="<?= $block->getHtmlId(); ?>"><?php // @codingStandardsIgnoreLine ?>
+        <span>
+            <?= __($block->escapeHtml($block->getButtonLabel())) ?><?php // @codingStandardsIgnoreLine ?>
+        </span>
+    </button>
+</div>
+<script type="text/x-magento-init">
+    {
+        "#ups_dashboard_liverates_addonconnection": {
+            "upsliverates/connect": {
+                "ajaxUrl": "<?= /* @noEscape */ $block->getButtonUrl() ?>"
+            }
+        }
+    }
+</script>

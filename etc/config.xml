@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * @category   UPS
+ * @package    UPS_Liverates
+ * @subpackage Config
+ * @link       https://www.ups.com
+ * @since      1.0.0
+ * @author UPS eCommerce Shipping Liverates
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Store:etc/config.xsd">
+    <default>
+        <carriers>
+            <upsaddonshippingliverates>
+                <active>1</active>
+                <sallowspecific>0</sallowspecific>
+                <model>UPS\Liverates\Model\Carrier\Shipping</model>
+                <name>UPS Shipping Method</name>
+                <price>0.00</price>
+                <title>UPS Live Rate</title>
+                <specificerrmsg>This shipping method is not available. To use this shipping method, please contact us.</specificerrmsg>
+                <handling_type>F</handling_type>
+            </upsaddonshippingliverates>
+        </carriers>
+    </default>
+</config>

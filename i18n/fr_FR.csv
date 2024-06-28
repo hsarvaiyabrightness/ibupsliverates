@@ -1,0 +1,19 @@
+"Please Activate UPS Core","Veuillez activer le cœur UPS", module, UPS_Liverates
+"Activate UPS Live Rates","Activer les tarifs UPS Live", module, UPS_Liverates
+"Username:","Nom d'utilisateur:", module, UPS_Liverates
+"Password:","Mot de passe:", module, UPS_Liverates
+"Account Number:","Numéro de compte:", module, UPS_Liverates
+"Connect to Live Rate","Connectez-vous au tarif en direct", module, UPS_Liverates
+"Deactive Live Rates","Tarifs en direct désactivés", module, UPS_Liverates
+"Remove Live Rates","Supprimer les tarifs en direct", module, UPS_Liverates
+"Successfully Disconnected","Déconnexion réussie", module, UPS_Liverates
+"Connected Successfully","Connexion réussie", module, UPS_Liverates
+"Something went wrong..!","Quelque chose s'est mal passé..!", module, UPS_Liverates
+"Do you want to remove connection?","Voulez-vous supprimer la connexion?", module, UPS_Liverates
+"Connecting to UPS Shipping Live Rate Service. Please Wait...","Connexion au service UPS Shipping Live Rate. S'il vous plaît, attendez..."
+"UPS shipping live rate service disabled","Service de tarification en direct de livraison UPS désactivé", module, UPS_Liverates
+"Activate Live Rate","Activer la tarification en direct", module, UPS_Liverates
+"Do you want to enable connection?","Voulez-vous activer la connexion ?", module, UPS_Liverates
+"Do you want to disable connection?","Voulez-vous désactiver la connexion ?", module, UPS_Liverates
+"Do you want to disable live rates?","Voulez-vous désactiver les tarifs en direct ?", module, UPS_Liverates
+"Do you want to remove live rates?","Voulez-vous supprimer les tarifs en direct ?", module, UPS_Liverates

@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * @category   UPS
+ * @package    UPS_Liverates
+ * @subpackage System
+ * @link       https://www.ups.com
+ * @since      1.0.0
+ * @author UPS eCommerce Shipping Liverates
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+    <system>
+        <tab id="upsdashboard" translate="label" sortOrder="110" class="upsdashboard-tab">
+            <label>Magento UPS</label>
+        </tab>
+        <section id="ups_dashboard" translate="label" type="text" sortOrder="8888" showInDefault="0" showInWebsite="0" showInStore="1">
+            <label>Start Here</label>
+            <tab>upsdashboard</tab>
+            <resource>UPS_Dashboard::config</resource>
+            <group id="liverates" translate="label" type="text" sortOrder="20" showInDefault="1" showInWebsite="1" showInStore="1">
+                
+                <label>Activate UPS Live Rates</label>
+                <field id="addonconnection" translate="label" sortOrder="100" showInDefault="0" showInWebsite="0" showInStore="1">
+                    <button_label>Connect to Live Rate</button_label>
+                    <button_url>upsliverates/index/connect</button_url>
+                    <frontend_model>UPS\Liverates\Block\Adminhtml\System\Config\Button</frontend_model>
+                </field>
+
+            </group>
+        </section>
+    </system>
+</config>

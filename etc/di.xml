@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * @category   UPS
+ * @package    UPS_Liverates
+ * @subpackage Di
+ * @link       https://www.ups.com
+ * @since      1.0.0
+ * @author UPS eCommerce Shipping Liverates
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+
+    <virtualType name="LiveratesaddonCustomLogger" type="Magento\Framework\Logger\Monolog">
+        <arguments>
+            <argument name="handlers"  xsi:type="array">
+                <item name="debug" xsi:type="object">UPS\Liverates\Logger\Handler\Custom</item>
+            </argument>
+        </arguments>
+    </virtualType>
+    <!-- DI for Module Helper -->
+    <type name="UPS\Liverates\Helper\Data">
+        <arguments>
+            <argument name="customLogger" xsi:type="object">LiveratesaddonCustomLogger</argument>
+        </arguments>
+    </type>
+    <!-- API connection Interface -->
+    <preference for="UPS\Liverates\Api\ConnectionInterface" type="UPS\Liverates\Model\Api\Connection"/>
+</config>

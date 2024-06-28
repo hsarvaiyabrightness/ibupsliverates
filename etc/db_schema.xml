@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * @category   UPS
+ * @package    UPS_Liverates
+ * @subpackage Schema
+ * @link       https://www.ups.com
+ * @since      1.0.0
+ * @author UPS eCommerce Shipping Liverates
+ */
+-->
+<schema xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:framework:Setup/Declaration/Schema/etc/schema.xsd">
+    <table name="ups_liverates_addon">
+        <column xsi:type="int" name="id" padding="10" unsigned="true" nullable="false" identity="true" comment="ID"/>
+        <column xsi:type="varchar" name="email" nullable="false" length="255" comment="Email"/>
+        <column xsi:type="varchar" name="instance_id" nullable="false" comment="Instance ID"/>
+        <column xsi:type="varchar" name="connection_id" nullable="false" comment="Connection ID"/>
+        <column xsi:type="int" name="store_id" padding="10" nullable="false" comment="Store ID"/>
+        <column xsi:type="varchar" name="api_key" nullable="false" length="255" comment="API Key"/>
+        <column xsi:type="varchar" name="api_secret" nullable="false" length="255" comment="API Secret"/>
+        <column xsi:type="datetime" name="created_at" nullable="false" default="CURRENT_TIMESTAMP" on_update="false" comment="Created At"/>
+        <column xsi:type="int" name="status" nullable="false" comment="Status"/>
+        <constraint xsi:type="primary" referenceId="PRIMARY">
+            <column name="id"/>
+        </constraint>
+    </table>
+</schema>
