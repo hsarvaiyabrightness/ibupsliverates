@@ -1,5 +1,5 @@
 {
-    "name": "ups/liverates",
+    "name": "ibupsliverates/liverates",
     "description": "UPS Liverates Extension",
     "type": "magento2-module",
     "version": "1.0.0",
